@@ -8,6 +8,14 @@ from langchain_community.vectorstores import Chroma
 
 load_dotenv()
 
+# Support both local .env AND Streamlit Cloud secrets
+import streamlit as st
+if not os.getenv("GOOGLE_API_KEY"):
+    try:
+        os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+    except Exception:
+        pass
+
 
 def process_pdf(text):
     splitter = RecursiveCharacterTextSplitter(
