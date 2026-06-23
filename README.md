@@ -37,4 +37,4 @@ GOOGLE_API_KEY=your_key_here
 Get a free key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 
 ## Live Demo
-[Add your deployed link here after Step 4]
+🔗 [Try DocBot AI live](https://docbot-ai-rag-assistant-iyvea67yhowvtliuthywyx.streamlit.app/)
